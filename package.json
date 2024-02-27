@@ -1,0 +1,12 @@
+{
+  "name": "onetwothree",
+  "version": "1.0.0",
+  "description": "change yourself",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
