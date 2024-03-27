@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santa Drawing</title>
+</head>
+<body>
+<canvas id="santaCanvas" width="200" height="200"></canvas>
+
+<script>
+const canvas = document.getElementById('santaCanvas');
+const ctx = canvas.getContext('2d');
+
+// Draw Santa Claus
+ctx.fillStyle = 'red'; // Red color for Santa's hat
+ctx.fillRect(50, 10, 100, 50); // Draw Santa's hat
+
+ctx.beginPath();
+ctx.arc(100, 80, 30, 0, Math.PI * 2); // Draw Santa's face
+ctx.fillStyle = 'white';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(80, 70, 5, 0, Math.PI * 2); // Draw left eye
+ctx.arc(120, 70, 5, 0, Math.PI * 2); // Draw right eye
+ctx.fillStyle = 'black';
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(90, 90); // Draw nose
+ctx.lineTo(100, 100);
+ctx.lineTo(110, 90);
+ctx.strokeStyle = 'orange';
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(100, 110); // Draw mouth
+ctx.arc(100, 110, 10, 0, Math.PI, false);
+ctx.strokeStyle = 'black';
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(70, 130); // Draw left arm
+ctx.lineTo(50, 150);
+ctx.lineTo(70, 150);
+ctx.strokeStyle = 'red';
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(130, 130); // Draw right arm
+ctx.lineTo(150, 150);
+ctx.lineTo(130, 150);
+ctx.strokeStyle = 'red';
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(100, 150); // Draw body
+ctx.lineTo(100, 100);
+ctx.lineTo(80, 130);
+ctx.lineTo(120, 130);
+ctx.lineTo(100, 100);
+ctx.strokeStyle = 'red';
+ctx.stroke();
+</script>
+</body>
+</html>
